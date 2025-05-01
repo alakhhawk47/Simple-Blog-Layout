@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog Post Adventure - My Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">My Simple Blog</a></h1>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="post1.html" style="text-decoration: underline;">First Post</a></li> <!-- Indicate current page -->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-layout">
+
+        <main class="content-area">
+            <article class="full-post">
+                <h1>My First Blog Post Adventure</h1>
+                <p class="post-meta">Posted by John Doe on <time datetime="2023-10-27">October 27, 2023</time></p>
+
+                <div class="post-content">
+                    <p>Welcome to the very first post on My Simple Blog! It's taken a bit of effort to get this structure up and running, but I'm thrilled to finally have a space to share thoughts, ideas, and learnings.</p>
+
+                    <p>The goal of this blog is primarily to explore topics related to web development, technology, and maybe occasionally some personal reflections on the journey of learning and creating.</p>
+
+                    <h3>Why Start a Blog?</h3>
+                    <p>In a world saturated with content, why add another voice? For me, it's about solidifying my own understanding. Explaining a concept forces you to understand it more deeply. Secondly, it's about connection. Sharing experiences, even simple ones like setting up this blog layout, can hopefully help someone else facing similar challenges.</p>
+
+                    <img src="https://via.placeholder.com/600x300" alt="Placeholder Image for Blog Post" style="max-width: 100%; height: auto; margin-bottom: 1em;">
+                    <!-- Replace with a real image if you have one -->
+
+                    <h3>The Structure</h3>
+                    <p>As you can see, the layout is quite straightforward. We have:</p>
+                    <ul>
+                        <li>A header with navigation.</li>
+                        <li>A main content area where this post resides.</li>
+                        <li>A sidebar for categories and recent posts (look to the right!).</li>
+                        <li>And below this content, a section for comments (just the layout for now).</li>
+                    </ul>
+                    <p>This was built using basic HTML for structure and CSS (with Flexbox) for the layout. Keeping it simple allows focus on the content itself.</p>
+
+                    <h3>What's Next?</h3>
+                    <p>Expect more posts soon covering topics like CSS Flexbox vs. Grid, semantic HTML best practices, and maybe some beginner JavaScript tutorials. Stay tuned!</p>
+                </div>
+            </article>
+
+            <section class="comments-section">
+                <h2>Comments</h2>
+
+                <div class="comment">
+                    <p class="comment-author">Jane Smith</p>
+                    <p class="comment-date"><time datetime="2023-10-27T10:30:00">October 27, 2023 at 10:30 AM</time></p>
+                    <p>Great start, John! Looking forward to reading more posts. The layout looks clean.</p>
+                </div>
+
+                <div class="comment">
+                    <p class="comment-author">Bob Johnson</p>
+                     <p class="comment-date"><time datetime="2023-10-27T11:15:00">October 27, 2023 at 11:15 AM</time></p>
+                    <p>Nice work setting this up! Always good to see people sharing their learning process.</p>
+                </div>
+
+                <!-- Comment Form Structure -->
+                <div class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <form action="#" method="post"> <!-- Action is # as it's non-functional -->
+                        <div>
+                            <label for="comment-name">Name:</label>
+                            <input type="text" id="comment-name" name="comment-name" required>
+                        </div>
+                        <div>
+                            <label for="comment-email">Email (Optional):</label>
+                            <input type="email" id="comment-email" name="comment-email">
+                        </div>
+                         <div>
+                            <label for="comment-body">Comment:</label>
+                            <textarea id="comment-body" name="comment-body" rows="5" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Post Comment</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">HTML Basics</a></li>
+                    <li><a href="#">Personal Journey</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                 <ul>
+                    <li><a href="post1.html">My First Blog Post Adventure</a></li>
+                    <li><a href="#">Exploring the Wonders of CSS</a></li>
+                    <li><a href="#">The Importance of Semantic HTML</a></li>
+                </ul>
+            </div>
+             <div class="widget">
+                <h3>Archives</h3>
+                 <ul>
+                    <li><a href="#">October 2023</a></li>
+                    <li><a href="#">September 2023</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2023 My Simple Blog. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

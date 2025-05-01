@@ -1,0 +1,283 @@
+/* Basic Reset & Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-bottom: 50px; /* Ensure footer doesn't overlap content */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow: hidden; /* Clear floats if using them, good practice */
+}
+
+/* Header & Navigation */
+.site-header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between; /* Pushes title left, nav right */
+    align-items: center;
+}
+
+.site-header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.site-header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.main-nav ul li a:hover {
+    background: #555;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Main Content Layout (using Flexbox) */
+.main-layout {
+    display: flex;
+    gap: 30px; /* Space between main content and sidebar */
+}
+
+.content-area {
+    flex: 3; /* Takes up 3 parts of the available space */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    flex: 1; /* Takes up 1 part of the available space */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: fit-content; /* Prevent sidebar from stretching full height */
+}
+
+/* Homepage - Post Previews */
+.post-preview {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.post-preview:last-child {
+    border-bottom: none; /* Remove border from the last preview */
+    margin-bottom: 0;
+}
+
+.post-preview h2 {
+    margin-bottom: 0.3em;
+}
+
+.post-preview h2 a {
+    color: #333;
+}
+
+.post-preview h2 a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
+
+/* Single Post Page */
+.full-post h1 {
+    margin-bottom: 0.2em;
+    font-size: 2.5em;
+}
+/* Inherits .post-meta style */
+
+.post-content {
+    margin-top: 20px;
+}
+
+.post-content h3 {
+    margin-top: 1.5em;
+    color: #444;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.comment {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-date {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.comment-form h3 {
+    margin-bottom: 15px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #218838;
+}
+
+
+/* Sidebar Widgets */
+.widget {
+    margin-bottom: 30px;
+}
+
+.widget h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.widget ul {
+    list-style: none;
+}
+
+.widget ul li {
+    margin-bottom: 8px;
+}
+
+.widget ul li a {
+    color: #333;
+}
+
+.widget ul li a:hover {
+    color: #007bff;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    /* Removed fixed positioning for simplicity */
+}
+
+/* Responsive (Basic Example) */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav ul li {
+        display: block; /* Stack nav items */
+        margin: 5px 0;
+    }
+    .main-layout {
+        flex-direction: column; /* Stack content and sidebar */
+    }
+    .content-area, .sidebar {
+        flex: 1 1 100%; /* Allow them to take full width */
+    }
+}

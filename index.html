@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">My Simple Blog</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="post1.html">First Post</a></li>
+                    <!-- Add links to other posts here -->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-layout">
+
+        <main class="content-area">
+            <h2>Latest Posts</h2>
+
+            <article class="post-preview">
+                <h2><a href="post1.html">My First Blog Post Adventure</a></h2>
+                <p class="post-meta">Posted by John Doe on <time datetime="2023-10-27">October 27, 2023</time></p>
+                <p>This is the beginning of a beautiful blogging journey. Here I talk about setting up the blog and the initial thoughts behind it. It's exciting to share ideas and connect...</p>
+                <a href="post1.html" class="read-more">Read More »</a>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="#">Exploring the Wonders of CSS</a></h2>
+                 <p class="post-meta">Posted by Jane Smith on <time datetime="2023-10-26">October 26, 2023</time></p>
+                <p>CSS is a powerful tool for styling web pages. In this post, we'll dive into some fundamental concepts like Flexbox and Grid layout, making responsive design easier than ever before.</p>
+                <a href="#" class="read-more">Read More »</a>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="#">The Importance of Semantic HTML</a></h2>
+                <p class="post-meta">Posted by John Doe on <time datetime="2023-10-25">October 25, 2023</time></p>
+                <p>Why use `<article>`, `<aside>`, `<nav>`? Semantic HTML isn't just about structure; it's crucial for accessibility and SEO. Let's break down why it matters.</p>
+                <a href="#" class="read-more">Read More »</a>
+            </article>
+
+            <!-- Add more post previews as needed -->
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">HTML Basics</a></li>
+                    <li><a href="#">Personal Journey</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="post1.html">My First Blog Post Adventure</a></li>
+                    <li><a href="#">Exploring the Wonders of CSS</a></li>
+                    <li><a href="#">The Importance of Semantic HTML</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Archives</h3>
+                 <ul>
+                    <li><a href="#">October 2023</a></li>
+                    <li><a href="#">September 2023</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2023 My Simple Blog. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

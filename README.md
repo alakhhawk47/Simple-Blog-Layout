@@ -4,7 +4,7 @@ A clean and responsive blog layout website built using HTML and CSS.
 This project represents a modern blog interface with well-structured sections for articles, headings, and content display.
 
 ## 🚀 Live Demo
-🔗 https://blog-alakh.netlify.app/
+🔗 https://alakhhawk47.github.io/Simple-Blog-Layout/
 
 ## 📌 Features
 - Clean blog-style layout
@@ -38,4 +38,7 @@ This project was built to practice creating structured blog layouts and improvin
 
 ## 👨‍💻 Author
 **Alakh Raj Singh**  
-GitHub: https://github.com/alakhhawk47
+B.Tech EC – JSS Academy of Technical Education, 
+
+## GitHub: 
+🔗 https://github.com/alakhhawk47
